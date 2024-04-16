@@ -114,8 +114,8 @@ if not os.path.exists(".git"):
     subprocess.run(["git", "init"], cwd=current_directory)
 
 # Check if .gitignore exists
-if not os.path.exists(".gitignore"):
-    with open(".gitignore", "w") as f:
+if not os.path.exists("../.gitignore"):
+    with open("../.gitignore", "w") as f:
         f.write(GITIGNORE)
 
 # Create a repo on GitHub
